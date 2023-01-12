@@ -11,6 +11,13 @@
 	<input type="text" name="" id="evaluatedText">
     <h3 id="letterCount"></h3>
     <script type="text/javascript" src="./script.js">
+	    let textInp = document.querySelector("input#evaluatedText")
+let count = document.querySelector("h3#letterCount")
+const charCount= ()=> {
+    let textLen = textInp.value.length;
+    count.innerText = textLen; 
+}
+textInp.addEventListener("input", charCount);
 </script>
 
 </body>
